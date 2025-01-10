@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" class="star">VastVoyages</a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Destinations</h1>
+        <p>Find out more about the places popular among tourists. Press on the image of the destination that interests
+            you!</p>
+        <br>
+
+        <h3 style="text-align: left;">Europe</h3>
+        <div class="row">
+            <div class="column">
+                <a href="Greece.html"><img src="images/santorini_Island/destinations_santorini_island.jpg"
+                        style="width:100%"></a>
+                <p>Santorini Island (Greece)</p>
+            </div>
+        </div>
+        <br>
+
+        <h3 style="text-align: left;">North America</h3>
+        <div class="row">
+            <div class="column">
+                <a href="Puerto Rico.html"><img src="images/puerto Rico/destinations_puerto_rico.jpg"
+                        style="width:100%"></a>
+                <p>Puerto Rico</p>
+            </div>
+        </div>
+        <br>
+
+        <h3 style="text-align: left;">South America</h3>
+        <div class="row">
+            <div class="column">
+                <a href="Brazil.html"><img src="images/rio_de_janeiro/destinations_rio_de_janeiro.jpg"
+                        style="width:100%"></a>
+                <p>Rio de Janeiro (Brazil)</p>
+            </div>
+        </div>
+        <br>
+
+        <h3 style="text-align: left;">Asia</h3>
+        <div class="row">
+            <div class="column">
+                <a href="Japan.html"><img src="images/kyoto/destinations_kyoto.jpg" style="width:100%"></a>
+                <p>Kyoto (Japan)</p>
+            </div>
+        </div>
+        <br>
+
+        <h3 style="text-align: left;">Africa</h3>
+        <div class="row">
+            <div class="column">
+                <a href="Kenya.html"><img src="images/kenya/destinations_kenya.jpg" style="width:100%"></a>
+                <p>Kenya</p>
+            </div>
+        </div>
+        <br>
+
+        <h3 style="text-align: left;">Australia</h3>
+        <div class="row">
+            <div class="column">
+                <a href="Sydney.html"><img src="images/sydney/destinations_sydney.jpg" style="width:100%"></a>
+                <p>Sydney</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="about">
+            <h3>About Us</h3>
+            <p>Your go-to gallery for breathtaking destinations and travel inspiration.</p>
+        </div>
+        <div class="social-links">
+            <h4>Follow Us</h4>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">YouTube</a>
+            <a href="https://uk.linkedin.com/">LinkedIn</a>
+        </div>
+        <p>© 2024 Interactive Gallery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the current page's URL path
+        const currentPage = window.location.pathname.split('/').pop();
+
+        // Select all navigation links
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        // Loop through the links and add 'active' class to the matching one
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

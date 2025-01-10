@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" class="star">VastVoyages</a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Gallery</h1>
+        <p>Surf through stunning images of breathtaking destinations.</p>
+        <br>
+        <!-- <h3 style="text-align: left;">Europe</h3> -->
+
+        <h4 style="text-align:left">Santorini island (Greece)</h4>
+        <div class="row">
+            <div class="column">
+                <img src="images/santorini_Island/gallery_santorini_island(1).jpg" alt="Beautiful city views"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/santorini_Island/gallery_santorini_island(2).jpg" alt="Boats for rent"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/santorini_Island/gallery_santorini_island(3).jpg" alt="Lucious beaches"
+                    style="width:100%">
+            </div>
+        </div>
+        <br>
+        <!-- <h3 style="text-align: left;">North America</h3> -->
+
+        <h4 style="text-align:left">Puerto Rico</h4>
+        <div class="row">
+            <div class="column">
+                <img src="images/puerto Rico/gallery_puerto_rico(1).jpg" alt="Beaches" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/puerto Rico/gallery_puerto_rico(2).jpg" alt="Colourful buildings"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/puerto Rico/Gallery_Puerto_rico(3).jpg" alt="Delicious Foods" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <!-- <h3 style="text-align: left;">South America</h3> -->
+
+        <h4 style="text-align:left">Rio de janeiro (Brazil)</h4>
+        <div class="row">
+            <div class="column">
+                <img src="images/rio_de_janeiro/gallery_Rio_de_janeiro(1).jpg" alt="Breathtaking city views"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/rio_de_janeiro/gallery_rio_de_janeiro(2).jpg" alt="Beaches" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/rio_de_janeiro/gallery_rio_de_janeiro_(3).jpg" alt="Delicious Foods"
+                    style="width:100%">
+            </div>
+        </div>
+        <br>
+        <!-- <h3 style="text-align: left;">Asia</h3> -->
+
+        <h4 style="text-align:left">Kyoto (Japan)</h4>
+        <div class="row">
+            <div class="column">
+                <img src="images/kyoto/gallery_kyoto(1).jpg" alt="Stunning scenery" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/kyoto/gallery_kyoto(2).jpg" alt="nice" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/kyoto/Gallery_Kyoto(3).jpg" alt="Delicious Foods" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <!-- <h3 style="text-align: left;">Africa</h3> -->
+
+        <h4 style="text-align:left">Kenya</h4>
+        <div class="row">
+            <div class="column">
+                <img src="images/kenya/gallery_kenya (1).jpg" alt="Stunning scenery" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/kenya/gallery_Kenya (2).jpg" alt="Delicious foods" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/kenya/gallery_kenya (3).jpg" alt="nice 2" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <!-- <h3 style="text-align: left;">Australia</h3> -->
+
+        <h4 style="text-align:left">Sydney</h4>
+        <div class="row">
+            <div class="column">
+                <img src="images/sydney/gallery_sydney(1).jpg" alt="Amazing foods" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/sydney/gallery_sydney(2).jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/sydney/gallery_sydney(3).jpg" alt="Breathetaking scenery" style="width:100%">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="about">
+            <h3>About Us</h3>
+            <p>Your go-to gallery for breathtaking destinations and travel inspiration.</p>
+        </div>
+        <div class="social-links">
+            <h4>Follow Us</h4>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">YouTube</a>
+            <a href="https://uk.linkedin.com/">LinkedIn</a>
+        </div>
+        <p>© 2024 Interactive Gallery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the current page's URL path
+        const currentPage = window.location.pathname.split('/').pop();
+
+        // Select all navigation links
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        // Loop through the links and add 'active' class to the matching one
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
